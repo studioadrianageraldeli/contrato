@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Contrato Pilates - Studio Adriana Geraldeli</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+  h2 { text-align: center; }
+  label { display: block; margin-top: 15px; font-weight: bold; }
+  input[type=text], input[type=date], input[type=email], textarea, select {
+    width: 100%; padding: 8px; box-sizing: border-box; margin-top: 5px;
+  }
+  textarea { resize: vertical; min-height: 80px; }
+  .signature-pad {
+    border: 1px solid #ccc; border-radius: 4px;
+    width: 100%; height: 150px; margin-top: 5px;
+  }
+  button { margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  .contract-text {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: #fafafa;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Contrato de Prestação de Serviços - Studio Adriana Geraldeli Pilates</h2>
+
+<form id="pilatesContract">
+
+  <label for="nome">Nome completo do CONTRATANTE (Aluno):</label>
+  <input type="text" id="nome" name="nome" required />
+  
+  <label for="cpf">CPF (formato 000.000.000-00):</label>
+  <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required />
+  
+  <label for="nascimento">Data de Nascimento:</label>
+  <input type="date" id="nascimento" name="nascimento" required />
+  
+  <label for="endereco">Endereço completo:</label>
+  <textarea id="endereco" name="endereco" required></textarea>
+  
+  <label for="telefone">Telefone (com DDD):</label>
+  <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+  
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required />
+  
+  <label>Escolha o plano contratado:</label>
+  <select id="plano" name="plano" required>
+    <option value="">-- Selecione o plano --</option>
+    <option value="mensal">Plano Mensal</option>
+    <option value="trimestral">Plano Trimestral</option>
+    <option value="semestral">Plano Semestral</option>
+  </select>
+  
+  <label for="valorPlano">Valor do plano contratado (R$):</label>
+  <input type="text" id="valorPlano" name="valorPlano" required />
+  
+  <label for="dataAssinatura">Data de assinatura do contrato:</label>
+  <input type="date" id="dataAssinatura" name="dataAssinatura" required />
+
+  <div class="contract-text" tabindex="0">
+1. DO OBJETO
+A prestação de serviços consiste na oferta de aulas de Pilates para o CONTRATANTE, presencialmente no estúdio localizado em [endereço completo do Studio], conforme plano escolhido.
+
+2. DAS OBRIGAÇÕES DO CONTRATANTE
+- Comparecer aos horários agendados ou comunicar com antecedência mínima de 24 horas eventual impossibilidade.
+- Efetuar o pagamento conforme condições e prazos estabelecidos no presente contrato.
+- Seguir as orientações dos profissionais e respeitar as normas internas do Studio.
+
+3. DAS OBRIGAÇÕES DO CONTRATADO
+- Disponibilizar os serviços de Pilates com profissionais devidamente qualificados.
+- Manter as instalações em perfeito estado de uso, respeitando normas de higiene e segurança.
+
+4. DO PAGAMENTO
+- O CONTRATANTE contratará os planos ofertados pelo Studio, escolhendo entre as opções abaixo conforme tabela vigente no momento da contratação:
+  ( ) Plano Mensal - R$ ____________
+  ( ) Plano Trimestral - R$ ____________
+  ( ) Plano Semestral - R$ ____________
+
+- O pagamento deverá ser efetuado até o dia ___ de cada mês, através dos meios previamente autorizados.
+
+5. DAS FALTAS E REPOSIÇÕES
+- O CONTRATANTE tem direito a até duas reposições no mês vigente, desde que comunique com antecedência mínima de 24 horas.
+- Aulas canceladas fora desse prazo, ou além do limite de reposições permitidas, poderão ser consideradas como realizadas e não serão repostas.
+
+6. DO CANCELAMENTO E RESCISÃO
+6.1. A rescisão do presente contrato deverá ser pleiteada pela CONTRATANTE por escrito, através do preenchimento do Termo de Rescisão e assinada, com prazo máximo de 30 (trinta) dias antes da data de vencimento da próxima mensalidade, para que não ocorra cobrança da mensalidade vigente. Caso contrário, será cobrado o valor da mensalidade vigente.
+6.2. No caso dos planos Trimestral e Semestral, a rescisão antes do prazo contratado acarretará pagamento de multa rescisória, correspondente ao pagamento do valor de uma mensalidade do plano contratado.
+6.3. Após o cumprimento desses trâmites, as eventuais cobranças futuras, exceto o correspondente à multa rescisória, serão canceladas após a data de cancelamento.
+
+7. DA RESPONSABILIDADE
+- O CONTRATANTE declara estar apto para a prática dos exercícios físicos e isenta o CONTRATADO, profissionais e colaboradores, de responsabilidade por eventuais lesões ou complicações derivadas do treinamento, salvo em caso de negligência comprovada.
+
+8. DO REAJUSTE
+- Os valores das mensalidades serão reajustados anualmente no mês de janeiro.
+- No caso dos planos trimestral e semestral, caso o reajuste ocorra na vigência do plano, o valor contratado será mantido pelo tempo determinado contratado. O reajuste será aplicado no primeiro mês subsequente, quando da renovação.
+
+9. DAS DISPOSIÇÕES GERAIS
+- A CONTRATANTE deverá preencher o questionário de prontidão para atividade física (Par-Q) e apresentar à CONTRATADA atestado médico no prazo de 30 dias a partir da matrícula, atestando sua aptidão para atividades físicas.
+- A CONTRATANTE que causar dano ou prejuízo à CONTRATADA responderá pelo ônus decorrente, nos termos do Art. 927 do Código Civil.
+- Na hipótese de inadimplência, a CONTRATADA cobrará multa moratória de 2% (dois por cento) da mensalidade acrescido de juros de 1% (um por cento) ao mês.
+- A CONTRATANTE autoriza o uso de sua imagem para campanhas promocionais e institucionais do Studio, sem ônus, abrangendo todo território nacional e exterior em mídia impressa e digital.
+
+ACEITAÇÃO
+Niterói, _____ de ________________________ de _______________ .
+Assinatura do CONTRATANTE: _________________________________________
+Assinatura do CONTRATADO: ___________________________________________
+  </div>
+  
+  <label>Declaro que li e aceito todas as cláusulas do contrato acima:</label>
+  <input type="checkbox" id="aceite" name="aceite" required />
+  <label for="aceite" style="display:inline;">Concordo</label>
+  
+  <label>Assinatura eletrônica do CONTRATANTE (desenhe abaixo):</label>
+  <canvas id="signature-pad" class="signature-pad"></canvas>
+  <button type="button" id="clear-signature">Limpar Assinatura</button>
+
+  <button type="submit">Enviar Contrato</button>
+</form>
+
+<script>
+  // Máscara CPF simples
+  const cpfInput = document.getElementById('cpf');
+  cpfInput.addEventListener('input', () => {
+    let v = cpfInput.value.replace(/\\D/g, '');
+    v = v.replace(/(\\d{3})(\\d)/, '$1.$2');
+    v = v.replace(/(\\d{3})(\\d)/, '$1.$2');
+    v = v.replace(/(\\d{3})(\\d{1,2})$/, '$1-$2');
+    cpfInput.value = v;
+  });
+
+  // Máscara telefone brasileira
+  const telefoneInput = document.getElementById('telefone');
+  telefoneInput.addEventListener('input', () => {
+    let v = telefoneInput.value.replace(/\\D/g, '');
+    if (v.length > 11) v = v.slice(0, 11);
+    v = v.replace(/^(\\d{2})(\\d)/g, '($1) $2');
+    v = v.replace(/(\\d{5})(\\d)/, '$1-$2');
+    telefoneInput.value = v;
+  });
+
+  // Assinatura no canvas
+  const canvas = document.getElementById('signature-pad');
+  const ctx = canvas.getContext('2d');
+  let drawing = false;
+  let lastX = 0, lastY = 0;
+
+  function resizeCanvas() {
+    const ratio = Math.max(window.devicePixelRatio || 1, 1);
+    canvas.width = canvas.offsetWidth * ratio;
+    canvas.height = canvas.offsetHeight * ratio;
+    ctx.scale(ratio, ratio);
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#000';
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  function startDrawing(e) {
+    drawing = true;
+    const rect = canvas.getBoundingClientRect();
+    const x = (e.clientX || e.touches[0].clientX) - rect.left;
+    const y = (e.clientY || e.touches[0].clientY) - rect.top;
+    lastX = x;
+    lastY = y;
+  }
+
+  function draw(e) {
+    if (!drawing) return;
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const x = (e.clientX || e.touches[0].clientX) - rect.left;
+    const y = (e.clientY || e.touches[0].clientY) - rect.top;
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    lastX = x;
+    lastY = y;
+  }
+
+  function stopDrawing() {
+    drawing = false;
+  }
+
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', stopDrawing);
+  canvas.addEventListener('mouseout', stopDrawing);
+
+  canvas.addEventListener('touchstart', startDrawing);
+  canvas.addEventListener('touchmove', draw);
+  canvas.addEventListener('touchend', stopDrawing);
+  canvas.addEventListener('touchcancel', stopDrawing);
+
+  document.getElementById('clear-signature').addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
+  // Validação da assinatura não vazia no envio
+  document.getElementById('pilatesContract').addEventListener('submit', e => {
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const isBlank = !imageData.data.some(channel => channel !== 0);
+    if (isBlank) {
+      alert('Por favor, desenhe sua assinatura eletrônica antes de enviar.');
+      e.preventDefault();
+      return;
+    }
+    if (!document.getElementById('aceite').checked) {
+      alert('Você deve aceitar todas as cláusulas do contrato antes de enviar.');
+      e.preventDefault();
+      return;
+    }
+    // Aqui incluir envio ao servidor, criação de PDF, etc.
+    alert('Contrato enviado com sucesso! (Exemplo - este formulário não envia a dados reais)');
+    e.preventDefault();
+  });
+</script>
+
+</body>
+</html>
